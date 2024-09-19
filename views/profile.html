@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+  <head>
+    <title>profile page</title>
+    <meta charset="utf-8">
+    <meta name="view report" content="width=device-width, intial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../public/css/profile.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
+</head>
+<video autoplay loop muted playsinline>
+    <source src="../assets/back.mp4"type="video/mp4">
+  </video>
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="./services.html">Services</a>
+      </div>
+      <div id="main">
+        <button class="openbtn" onclick="toggleSidebar()">☰</button>
+      </div>
+    <div class="container">
+        <div class="leftbox">
+            <nav>
+                <a onclick="tabs(0)" class="tab active">
+                    <i class='bx bx-user'></i>
+            </a>
+            <a onclick="tabs(1)" class="tab">
+                <i class='bx bx-credit-card'></i>
+            </a>
+            <a onclick="tabs(2)" class="tab">
+                <i class='bx bx-tv' ></i>
+            </a>
+            <a onclick="tabs(3)" class="tab">
+                <i class='bx bx-list-check' ></i>
+            </a>
+            <a onclick="tabs(4)" class="tab">
+                <i class='bx bx-cog' ></i>
+            </a>
+            </nav>
+        </div>
+        <div class="rightbox">
+            <div class="tabShow" id="personal Info">
+                <h1>Personal Info</h1>
+                <h2>Full Name</h2>
+                <input type="text" class="input" value=" ">
+                <h2>Birthday</h2>
+                <input type="text" class="input" value=" ">
+                <h2>Gender</h2>
+                <input type="text" class="input" value=" ">
+                <h2>Email</h2>
+                <input type="text" class="input" value=" ">
+                <h2>Password</h2>
+                <input type="text" class="input" value=" ">
+                <button class="btnuppay">Update</button>
+            </div>
+            <div class="tabShow" id="Payment tabShow">
+                <h1>Payment Info</h1>
+                <h2>Payment Method</h2>
+                <input type="text" class="input" value=" ">
+                <h2>Billing Address</h2>
+                <input type="text" class="input" value=" ">
+                <h2>Pin Code</h2>
+                <input type="text" class="input" value=" ">
+                <h2>Billing Date</h2>
+                <input type="text" class="input" value=" ">
+                <h2>Redeem Code</h2>
+                <input type="text" class="input" value=" ">
+                <button class="btnuppay">Update</button>
+            </div>
+            <div class="tabShow" id="Subscription tabShow">
+                <h1>Subscription Info</h1>
+                <h2>Payment Date</h2>
+                <p></p>
+                <h2>Next Charges</h2>
+                <p></p><span>includes tax</span>
+                <h2>Plan-details</h2>
+                <p></p>
+                <button class="btnuppay">Update</button>
+            </div>
+            <div class="tabShow" id="Privacy tabShow">
+                <h1>Privacy Settings</h1>
+                <h2>Manage Email Notifications</h2>
+                <p></p>
+                <h2>Manage privacy settings</h2>
+                <p></p>
+                <h2>Plan-details</h2>
+                <p></p>
+                <button class="btnuppay">Update</button>
+            </div>
+            <div class="tabShow" id="Account Setttings">
+                <h1>Account Settings</h1>
+                <h2>Hold Subscription</h2>
+                <p></p>
+                <h2>Cancel Subscription</h2>
+                <p></p>
+                <h2>your devices</h2>
+                <p></p>
+                <button class="btnuppay">Update</button>
+                <a href="./home.html" class="btnlogout" style="float: left;margin-top: 80%;">Log Out</a>
+            </div>
+        </div>
+
+    </div>
+   
+
+
+
+
+
+
+    <script src="jquery/jquery.js"></script>
+    <script>
+        const tabBtn = document.querySelectorAll(".tab");
+        const tab = document.querySelectorAll(".tabShow");
+        function tabs(panelIndex){
+            tab.forEach(function(node){
+                node.style.display = "none";});
+            tab[panelIndex].style.display ="block";
+            tabBtn.forEach((btn) => btn.classList.remove("active"));
+            tabBtn[panelIndex].classList.add("active");
+        }
+        tabs(0);
+        document.addEventListener("DOMContentLoaded", function () {
+        tabBtn.forEach(function (btn, index) {
+          btn.addEventListener("click", function () {
+        tabs(index);
+      });
+    });
+  });
+    </script>
+    <script src="../public/js/index.js"></script>
+</body>

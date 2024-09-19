@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,900|Montserrat|Roboto"); 
+    body{
+   /*background: linear-gradient( to right, #2ed573,#f9ca24);*/
+    overflow-x: hidden;
+}
+.container{
+    background: transparent;
+    border: lime solid;
+    width: 540px;
+    height: 450px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 10%;
+    border-radius: 5%;
+    box-shadow: 2px 5px 20px
+    rgba(119,119,119,.5);
+}
+
+video {
+    margin-left: -10%;
+    margin-top: -10%;
+    position: fixed;
+    z-index: -1;
+
+  }
+.leftbox{
+    border-radius: 30px;
+    float: left;
+    top: -5%;
+    left:5%;
+    position: absolute;
+    width: 15%;
+    height: 110%;
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0.5),rgba(0, 128, 0, 0.605));
+    box-shadow: 3px 3px 10px
+    rgba(119,119,119,.5);
+    border: solid #fff;
+
+}
+nav a{
+    animation: headcol 1s ease-in-out infinite alternate;
+    list-style: none;
+    padding: 35px;
+    color: #fff;
+    font-size: 1.5rem;
+    display: block;
+    transition: all .3s ease-in-out;
+}
+nav a:hover{
+    animation: glowpara 1s ease-in-out infinite alternate;
+    color: #000000;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+nav a:first-child{
+    margin-top: 7px;
+}
+.tab.active i{
+    color: #000000;
+}
+.rightbox{
+    width: 60%;
+    margin-left: 27%;
+    height: 50%;
+}
+.tabShow{
+    transition: al .5s ease-in;
+    width: 80%;
+}
+@keyframes glowpara
+{
+    from{
+        text-shadow: 0 0 20px rgb(249, 249, 249),0 0 40px white,0 0 60px white,0 0 80px white;
+    }
+    to {
+        text-shadow: 0 0 20px white,0 0 40px white,0 0 60px white,0 0 80px white;   
+    }
+}
+@keyframes headcol
+{
+    from{
+        text-shadow: 0 0 10px lime,0 0 20px lime,0 0 30px lime,0 0 40px lime,0 0 50px lime,0 0 60px lime,0 0 70px lime;
+    }
+    to {
+        text-shadow: 0 0 10px lime,0 0 20px lime,0 0 30px lime,0 0 40px lime,0 0 50px lime,0 0 50px lime,0 0 60px lime;
+    }
+}
+@keyframes glow
+{
+    from{
+        text-shadow: 0 0 10px deepskyblue,0 0 20px deepskyblue,0 0 30px deepskyblue,0 0 40px deepskyblue;
+    }
+    to {
+        text-shadow: 0 0 10px deepskyblue,0 0 20px deepskyblue,0 0 30px deepskyblue,0 0 40px deepskyblue;   
+    }
+}
+h1{
+    animation: glow 1s ease-in-out infinite alternate;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-top: 40px;
+    margin-bottom: 35px;
+    font-style: bold;
+}
+h2{
+    animation: glowpara 1s ease-in-out infinite alternate;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-left: 2px;
+    margin-top: 10px;
+}
+.input[type="text"]{
+    border:rgb(255, 0, 0) ;
+    width: 80%;
+    font-family: .7em;
+    padding: 7px 0;
+    color: black;
+    outline:none;
+}
+span{
+    font-size: .7em;
+    color: #777;
+}
+.btnuppay{
+    float: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(57, 176, 57);
+    padding: 8px 12px;
+    border: #ffffff solid;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    margin-top: 3%;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btnlogout{
+    font-style: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
+    text-decoration: none;
+    color: lime;
+    background: transparent;
+    padding: 8px 32px;
+    border: #ffffff solid;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    margin-top: 100%;
+    text-transform: uppercase;
+}
+.btnlogout:hover{
+    font-style: bold;
+    color:rgb(255, 0, 0);
+    padding: 10px 34px;
+    transition: 0.3s ease;
+}
+.tabShow{
+    display: none;
+}
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    display: block;
+    padding: 16px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    background-color: #555;
+  }
+  
+  .openbtn {
+    display: grid;
+    float: left;
+    margin-top: 0px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }

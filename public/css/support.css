@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'poppins',sans-serif;
+}
+.container{
+    position: absolute;
+    float: left;
+    width:100%;
+    height: 100vh;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    background: transparent;
+    border: lime solid; 
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 20px;
+}
+@keyframes glowpara
+{
+    from{
+        text-shadow: 0 0 20px rgb(249, 249, 249),0 0 40px white,0 0 60px white,0 0 80px white;
+    }
+    to {
+        text-shadow: 0 0 20px white,0 0 40px white,0 0 60px white,0 0 80px white;   
+    }
+}
+@keyframes glow
+{
+    from{
+        text-shadow: 0 0 10px deepskyblue,0 0 20px deepskyblue,0 0 30px deepskyblue,0 0 40px deepskyblue;
+    }
+    to {
+        text-shadow: 0 0 10px deepskyblue,0 0 20px deepskyblue,0 0 30px deepskyblue,0 0 40px deepskyblue;   
+    }
+}
+form h3{
+    animation: glow 1s ease-in-out infinite alternate;
+    color: #ffffff;
+    font-weight: 800;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+label{
+    animation: glowpara 1s ease-in-out infinite alternate;
+    color: cyan;
+    font-weight: 550;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-style: bold;
+}
+form input,form textarea{
+    margin-bottom: 10px;
+    border:#fff solid;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    border-radius: 20px;
+    background:transparent;
+    color: #fff;
+    font-size: 16px;
+}
+form input:hover{
+    padding: 24px 28px;
+    transition: 0.7s ease;
+}
+form textarea:hover{
+    padding: 24px 28px;
+    transition: 0.7s ease;
+}
+form input::placeholder{
+    color: #ff0000a6;
+}
+form textarea::placeholder{
+    color: #ff0000c3;
+}
+form button{
+    padding: 15px;
+    background: transparent;
+    color: #00ffff;
+    font-weight: 600;
+    font-style: bold;
+    font-size: 18px;
+    border: rgb(255, 255, 255) solid;
+    outline:none;
+    cursor: pointer;
+    width: 150px;
+    margin:20px auto 0;
+    border-radius: 30px;
+}
+form button:hover{
+    background:transparent;
+    font-weight: 600;
+    font-style: bold;
+    color:rgb(255, 0, 0);
+    padding: 22px 24px;
+    transition: 0.7s ease;
+}
+/* support.css */
+
+/* Style for the success message */
+#Success {
+    background-color: #d4edda; /* Light green background color */
+    color: #155724; /* Dark green text color */
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the error message */
+  #Alert {
+    background-color: #f8d7da; /* Light red background color */
+    color: #721c24; /* Dark red text color */
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .sidebar {
+    height: 100%;
+    width: 0; /* Initially set to 0 to hide the sidebar */
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    display: block;
+    padding: 16px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover{
+    background-color: #555;
+  }
+  
+  .openbtn{
+    display: grid;
+    float: left;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    z-index: 5;
+    margin-left: -425px;
+    margin-top: -360px;
+  }
+  
+  .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn:hover{
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left 0.5s;
+    padding: 16px;
+  }
+  .icon{
+    position: absolute;
+    animation: glowpara 1s ease-in-out infinite alternate;
+    font-size: 36px;
+    height: 4px;
+    width: 230px;
+    display: grid;
+    margin-left: 25px;
+    margin-top: 700px;
+    place-items: center;
+    z-index: 2;
+}
+.icon-button{
+    position: absolute;
+    display: grid;
+    padding: 5px; 
+    background-color:transparent;
+    color: rgb(255, 255, 255); 
+    text-decoration: none;
+    margin-left: -100px; 
+    z-index: 3;
+    float: left;
+  }
+  .icon-button:hover{
+    background-color: transparent;
+    color:lime;
+    font-size: 45px;
+    transition: 0.7s ease;
+  }
+  .iconn{
+    position: absolute;
+    animation: glowpara 1s ease-in-out infinite alternate;
+    font-size: 36px;
+    height: 4px;
+    width: 230px;
+    display: grid;
+    margin-left: 85px;
+    margin-top: 700px;
+    place-items: center;
+    z-index: 2;
+}
+.icon-button1{
+    position: absolute;
+    display: grid;
+    padding: 5px; 
+    background-color:transparent;
+    color: rgb(255, 255, 255); 
+    text-decoration: none;
+    margin-left: -100px; 
+    z-index: 3;
+    float: left;
+  }
+  .icon-button1:hover{
+    background-color: transparent;
+    color:cyan;
+    font-size: 45px;
+    transition: 0.7s ease;
+  }
+  .icon1{
+    position: absolute;
+    animation: glowpara 1s ease-in-out infinite alternate;
+    font-size: 36px;
+    height: 4px;
+    width: 230px;
+    display: grid;
+    margin-left: 140px;
+    margin-top: 700px;
+    place-items: center;
+    z-index: 2;
+    translate: -50%,-50%;
+}
+.icon-button2{
+    position: absolute;
+    display: grid;
+    padding: 5px; 
+    background-color:transparent;
+    color: rgb(255, 255, 255); 
+    text-decoration: none;
+    margin-left: -100px; 
+    z-index: 3;
+    float: left;
+    border: transparent  2px;
+    border-radius: 20%;
+  }
+  .icon-button2:hover{
+    background :rgb(63,94,251);
+    background: linear-gradient(90deg,rgba(63,94,251,1)0%,rgba(252,70,107,1)100%);
+    border: transparent  2px;
+    font-size: 42px;
+    border-radius: 20%;
+    transition: 0.2 s ease;
+    translate: -50%,-50%;
+  }
+  .icon2{
+    position: absolute;
+    animation: glowpara 1s ease-in-out infinite alternate;
+    font-size: 36px;
+    height: 4px;
+    width: 230px;
+    display: grid;
+    margin-left: 190px;
+    margin-top: 700px;
+    place-items: center;
+    z-index: 2;
+    translate: -50%,-50%;
+}
+.icon-button3{
+    position: absolute;
+    display: grid;
+    padding: 5px; 
+    background-color:transparent;
+    color: rgb(255, 255, 255); 
+    text-decoration: none;
+    margin-left: -100px; 
+    z-index: 3;
+    float: left;
+    border: transparent  2px;
+    border-radius: 20%;
+  }
+  .icon-button3:hover{
+    background-color: transparent;
+    color:lime;
+    font-size: 45px;
+    transition: 0.7s ease;
+  }
+ 

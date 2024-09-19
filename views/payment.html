@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Payment page</title>
+    <meta charset="utf-8">
+    <meta name="view report" content="width=device-width, intial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../public/css/payment.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Petemoss&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Petemoss&display=swap" rel="stylesheet">
+   
+  </head>
+  <video autoplay loop muted playsinline>
+    <source src="../assets/back.mp4" type="video/mp4">
+  </video>
+  <body>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="./services.html">Services</a>
+    </div>
+  <header>
+    <div id="main">
+      <button class="openbtn" onclick="toggleSidebar()">☰</button>
+    </div>
+    <div class="container">
+      <div class="left">
+      <h3>Billing Address</h3>
+      
+      <form>
+        Full Name
+        <input type="text" name="" placeholder="Enter Full Name">
+        Mobile Number
+        <input type="text" name="" placeholder="Enter Mobile Number">
+        Address/Door.No
+        <input type="text" name="" placeholder="Enter Address">
+        Area
+        <input type="text" name="" placeholder="Enter Area/near location">
+        <div id="zip">
+          <label>
+            State
+            <select>
+              <option>choose state..</option>
+              <option>Telangana</option>
+              <option>Andhra pradesh</option>
+              <option>Kerala</option>
+              <option>Karnataka</option>
+              <option>Tamil Nadu</option>
+              <option>Maharashtra</option>
+            </select>
+          </label>
+          <label>
+            Pin code
+            <input type="number" name="" placeholder="Enter pin code">
+          </label>
+        </div>
+        Coupon Code
+        <input type="text" name="" placeholder="Enter coupon code">
+        <button type="button" class="btnsubmit">Continue to Payment</button>
+
+    
+        
+      </form> 
+      </div> 
+  </header>
+  <script src="../public/js/index.js"></script>
+  </body>
