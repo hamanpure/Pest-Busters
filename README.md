@@ -30,16 +30,16 @@
 ## Screenshots
 
 ### Homepage
-![Homepage](../Pest-Busters-main/public/demo/home.png)
+![Homepage](./public/demo/home.png)
 
 ### Login Page
-![Login Page](../Pest-Busters-main/public/demo/login.png)
+![Login Page](./public/demo/login.png)
 
 ### Service Selection
-![Service Selection](../Pest-Busters-main/public/demo/service.png)
+![Service Selection](./public/demo/service.png)
 
 ### Payment Page
-![Payment Page](../Pest-Busters-main/public/demo/payment.png)
+![Payment Page](./public/demo/payment.png)
 
 ## Getting Started
 
